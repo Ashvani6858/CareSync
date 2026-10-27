@@ -18,10 +18,10 @@ const connectDB = async () => {
   try {
     const mongoUri =
       process.env.MONGO_URI ||
-      'mongodb+srv://hms:Hospital999@cluster0.panlxcw.mongodb.net/hospital_management?retryWrites=true&w=majority&appName=Cluster0';
+      'mongodb+srv://ashvanisingh930_db_user:Ashvani%40930@cluster0.lbhzsid.mongodb.net/hospital_management?retryWrites=true&w=majority';
 
     const conn = await mongoose.connect(mongoUri, {
-      serverSelectionTimeoutMS: 10000,
+      serverSelectionTimeoutMS: 15000,
       socketTimeoutMS: 45000,
       maxPoolSize: 10,
     });
